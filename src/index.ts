@@ -123,7 +123,7 @@ export class Authenticator {
       headers: {
         'location': [{ 
           key: 'Location',
-          value: location,
+          value: encodeURI(location),
         }],
         'cache-control': [{
           key: 'Cache-Control',
